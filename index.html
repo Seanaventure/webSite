@@ -90,7 +90,7 @@
   <div id="content">
     <div id="about">
       <h2 class="contentHeader">About</h2>
-      <p>I am an 18 year old computer engineering student from Harleysville, Pennsylvania. I enjoy running, hiking, lifting, video games, and some other stuff</p>
+      <p>I am an 18 year old computer engineering student from Harleysville, Pennsylvania. I enjoy running, hiking, and lifting.</p>
       <p>I am also minoring in astronomy</p>
     </div>
     <div id="projects">
@@ -100,14 +100,14 @@
           <h3>Arduino Weather Monitor</h3>
 	  <p>The Rochester weather can be very unpredictable, and to help me see what is going on I build a desktop weather monitor. The monitor consists of an Arduino with an 8x32 LED matrix.
 	  The Arduino is plugged into a raspberry pi, which runs a Java program to fetch weather data. The Java program uses the free API Open Weather Map(OWM). The program makes an HTTP request to the API
-	  which returns a JSON object with a bunch of weather data. The program takes out the temperature and an additional description such as sunny or cloudy. The program then sends the data the to 
+	  which returns a JSON object with a bunch of weather data. The program takes out the temperature and an additional description such as sunny or cloudy. The program then sends the data the to
 	  the arduino over a serial connection</p>
         </li>
         <li>
           <h3>Mandelbrot Set</h3>
 	  <p>You may not know the name, but you've probably seen many pictures of fractals online. They are the colorful images where you can infinitely zoom in and the never loose complexity.
 	  One particularly famous fractal is called the Mandelbrot set. The Mandelbrot set is a fractal based on the limit of the equation f(z) = z^2 + c, where c is a complex number. The function is recursive in nature
-	  because it starts out with z being 0, then in the next iteration of the equation c stays constant and z is the value result of the last equation. A number is said to be in the Mandelbrot set if 
+	  because it starts out with z being 0, then in the next iteration of the equation c stays constant and z is the value result of the last equation. A number is said to be in the Mandelbrot set if
 	  the limit of that equation is less than 0. <br>
 	  I created a program that creates visualizations of the set in python. First, I use the Python Imaging Library to create an image of 1024x1024. The user enters the bounds of the window as a command line argument,
 	  and the program goes pixel by pixel determining the complex number value of that pixel, and if the number is in the set. If it is in the set it is colored black and if not it is colored depending on how long it
