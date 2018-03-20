@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bacon Relation</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 5px;
+    }
+
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 635px}
+
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+
+    /* Set black background color, white text and some padding */
+    footer {
+
+      background-color: #555;
+      color: white;
+      padding: 8px;
+    }
+
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;}
+    }
+    div.one{
+      width: 300px;
+      padding: 25px;
+      margin: 25px;
+      background-color: #white;
+      font-family: "Courier";
+      font-weight: bold;
+    }
+
+    form{
+      width: 40%;
+      margin-right: 25%;
+      margin-left: 25%;
+      font-family: fantasy;
+      font-size: 120%;
+
+
+    }
+    input[type=text]{
+      border:2px solid red;
+      border-radius:7px;
+      background-color: #EFDFD0;
+      width:200px;
+      margin:15px;
+      padding:15px;
+      -webkit-transition: width 0.4s ease-in-out;
+     transition: width 0.4s ease-in-out;
+     text-align: center;
+     font-family: "Times New Roman";
+    }
+    input[type=text]:focus {
+      width: 300px;
+}
+ div.two{
+   width: 700px;
+   border: 3px solid black;
+   border-style: ridge;
+   border-radius: 30px;
+   background-color: white;
+   padding: 25px;
+   margin: 25px;
+   font-family: "Courier";
+   font-weight: bold;
+ }
+</style>
+
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="https://www.rit.edu/alumni/about/mascot"><img width="50px" height="50px" src="rit.jpg" style="position:relative;top:-15px"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="https://brickhack.io/">Brick Hack</a></li>
+        <li><a href="https://www.rit.edu/">The College</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container-fluid text-center" id="mainDiv">
+    <div>
+      <img src="kb.jpg" width="300" height="300" style="float: left; margin-top:100px;"/>
+      <img src="qm.gif" width="300" height="300" style="float: right; margin-right:30px; margin-top:100px"/>
+        <center><div class="one"><h2>The BACON Relation</h2></div>
+          <form action:"http://seanbon.student.rit.edu/brickHack4/main.py" method="get">
+            <div>
+              Enter the Name of the Moive Star:<br>
+              <input type="text" value:"celebrityName" placeholder="'Justin Bieber'" onfocus="this.placeholder = ''"
+              onblur="this.placeholder = 'Joking, He\'s not a real Celeb'">
+            </div>
+            <div>
+
+		<input type="submit" value="Submit">
+
+
+            </div>
+          </form>
+          <br><br>
+    </center>
+    </div>
+</div>
+</body>
+</html>
