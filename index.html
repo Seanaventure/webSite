@@ -116,6 +116,33 @@
 	  <br>
   	  Here is a view of the generated Mandelbrot set. Code can be viewed on GitHub.
 	  </p>
+      </li>
+      <li>
+        <h3>Place (Reddit) Clone</h3>
+        Place was a social experiment created by reddit.com where users could place one pixel every 5 minutes on a shared canvas. A clone was created using Java and JavaFX.
+        The concepts of Object Oriented Programming and Model View Controller were used to implement a server and client application.
+        <br>
+        Sadly I cannot share the code for it on GitHub because it was my final project for CS for AP Students, but I can still discuss the project.
+        The project was very enjoyable and taught me a lot about coding. It used many concepts such as Object Oriented Programming, Model View Controller, Networking, Threading, GUI,
+        and input/output streams. Because I was able to work with one other person I was able to learn how to work on a project with another person.
+        <br>
+        The main structure of the project consisted of two applications, a server, and an application, both were programmed in Java. The server was multithreaded so it could
+        handle any number of users. It communicated with the application by creating a socket and sending or receiving messages using input or output streams.
+        <br>
+        The application used JavaFX to display a simple grid of rectangles that can be colored by clicking on them. The user had to option of 16 colors to choose from.
+        The core of the application revolved around the Model View Controller (MVC) principle. This principle made it much easier to code the application because the logic was
+        completely separated from the UI. I could make changes to the UI without having to worry about affecting the logic. One of the things that surprised me was how easy it was
+        creating different UIs using MVC. For example, the GUI was made first, but we also had to make a command line interface. Because of the separation of logic because of MVC,
+        I was easily able to create a command line UI by just making a couple of calls to the application to get the data I needed.
+        <br>
+        Beyond the base application, my partner and I created multiple bots. I created a bot that would take any image and place it on the board. I had the main requirement I had for
+        the bot was to be able to preserve color as best as possible. Because there were only 16 color options for the board, but an image could have thousands of colors, I had to convert
+        the colors of the image to one of the 16 colors. To do this I did a form of weighted average. I would compare the color of each pixel to each available color and take a weighted
+        difference between the red, green, and blue component of each available color. The color with the lowest result would be the closest to the pixels color. This method worked very well.
+         Most of the color of the images were maintained. I did notice the method did not work that well for human skin tones, but I was still happy with it.
+        <br>
+        This was a large and challenging project, but it was very enjoyable. It allowed me to be creative and incorporated what we learned in class very well.
+      </li>
       </ul>
     </div>
   </div>
